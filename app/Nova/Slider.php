@@ -60,6 +60,7 @@ class Slider extends Resource
             ->prunable(),
             Text::make(__('Описание hover слайдера'),'img-hover-alt')->placeholder('Введите описание hover слайдера'),
             Number::make(__('Скидка акции'),'sale'),
+            Text::make(__('Номер купона'),'coupone')->placeholder('Введите номер купона'),
             Text::make(__('Название кнопки'),'btn_name')->placeholder('Введите название кнопки'),
             Textarea::make(__('Описание акции'),'desc')->placeholder('Введите описание акции'),
             Text::make(__('Текст срока действия промокода'),'time')->placeholder('Введите текст срока действия промокода'),
