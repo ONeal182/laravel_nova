@@ -58,7 +58,7 @@ class Slider extends Resource
             Image::make(__('Hover картинки слайдера'),'img_hover')->disk('public')
             ->path('photos')
             ->prunable(),
-            Text::make(__('Описание hover слайдера'),'img-hover_alt')->placeholder('Введите описание hover слайдера'),
+            Text::make(__('Описание hover слайдера'),'img_hover_alt')->placeholder('Введите описание hover слайдера'),
             Number::make(__('Скидка акции'),'sale'),
             Text::make(__('Номер купона'),'coupone')->placeholder('Введите номер купона'),
             Text::make(__('Название кнопки'),'btn_name')->placeholder('Введите название кнопки'),
