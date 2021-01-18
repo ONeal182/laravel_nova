@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Models\Slider;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// dd($data);
 Route::get('/', function () {
-    return view('home');
+    $slids = Slider::all();
+    return view('home',['slids'=>$slids]);
 });

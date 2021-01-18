@@ -51,14 +51,14 @@ class Slider extends Resource
             Text::make(__('Название акции'),'name')->placeholder('Введите название акции'),
             DateTime::make(__('Начало акции'),'activeFrom'),
             DateTime::make(__('Конец акции'),'activeTo'),
-            Image::make(__('Картинка слайдера'),'img-static')->disk('public')
+            Image::make(__('Картинка слайдера'),'img_static')->disk('public')
             ->path('photos')
             ->prunable(),
-            Text::make(__('Описание картинки слайдера'),'img-static-alt')->placeholder('Введите описание картинки слайдера'),
-            Image::make(__('Hover картинки слайдера'),'img-hover')->disk('public')
+            Text::make(__('Описание картинки слайдера'),'img_static_alt')->placeholder('Введите описание картинки слайдера'),
+            Image::make(__('Hover картинки слайдера'),'img_hover')->disk('public')
             ->path('photos')
             ->prunable(),
-            Text::make(__('Описание hover слайдера'),'img-hover-alt')->placeholder('Введите описание hover слайдера'),
+            Text::make(__('Описание hover слайдера'),'img-hover_alt')->placeholder('Введите описание hover слайдера'),
             Number::make(__('Скидка акции'),'sale'),
             Text::make(__('Номер купона'),'coupone')->placeholder('Введите номер купона'),
             Text::make(__('Название кнопки'),'btn_name')->placeholder('Введите название кнопки'),

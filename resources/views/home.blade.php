@@ -22,6 +22,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 </head>
 <body>
+
+@foreach ($slids as $slid)
+        {{ $slid->name }}
+    @endforeach
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJ4GPTD"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -365,7 +369,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         // if (!empty($arCarousel)) {
         ?>
-        <!-- <div class="discount" id="discount" data-parallax="scroll" data-image-src="assets/img/discount.jpg">
+        <div class="discount" id="discount" data-parallax="scroll" data-image-src="assets/img/discount.jpg">
             <div class="row">
                 <div class="discount-title">Получите скидку</div>
                 <div class="discount-anons">На следующую покупку рационов Eukanuba у партнеров</div>
@@ -378,40 +382,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 // $i = 0;
                                 // foreach ($arCarousel as $item) {
                             ?>
+                            @foreach ($slids as $slid)
+                                {{ $slid->name }}
+
                             <div class="swiper-slide">
                                 <div class="offer">
                                     <div class="content">
                                         <div class="offer-front">
                                             <div class="offer-img">
                                                 <div class="show">
-                                                    <img src="<?//=$item['img-static']?>" alt="<?//=(empty($item['img-static-alt'])) ? '' : $item['img-static-alt']?>">
+                                                    <img src="/storage/{{$slid->img_static}}" alt="{{$slid->img_static_alt}}">
                                                 </div>
                                                 <div class="hide">
-                                                    <img src="<?//=$item['img-hover']?>" alt="<?//=(empty($item['img-hover-alt'])) ? '' : $item['img-hover-alt']?>" class="hover">
+                                                    <img src="/storage/{{$slid->img_hover}}" alt="img_hover_alt" class="hover">
                                                 </div>
                                             </div>
-                                            <div class="offer-discount"><?//=$item['sale']?></div>
+                                            <div class="offer-discount">{{$slid->sale}}%</div>
                                             <div class="offer-get">
-                                                <?//=$item['get']?>
+                                            {{$slid->btn_name}}
                                             </div>
                                         </div>
                                         <div class="offer-back">
-                                            <b><?//=$item['discount']?></b>
+                                            <b>Скидка {{$slid->sale}}%></b>
                                             <div class="desc">
-                                                <?//=$item['desc']?>
+                                            {!! $slid->desc !!}
+
                                             </div>
-                                            <div class="coupone" id="coupone<?//=$i?>"><?//=$item['coupone']?></div>
-                                            <button onclick="copyToClipboard('#coupone<?//=$i?>')">скопировать</button>
-                                            <div class="text"><?//=$item['time']?></div>
-                                            <a href="<?//=(!empty($item['link']) ? $item['link'] : 'javascript:;')?>" class="more" target="_blank">КУПИТЬ</a>
+                                            <div class="coupone" id="coupone{{$slid->id}}">{{$slid->coupone}}</div>
+                                            <button onclick="copyToClipboard('#coupone{{$slid->id}}')">скопировать</button>
+                                            <div class="text">{{$slid->time}}</div>
+                                            <a href="{{$slid->link}}" class="more" target="_blank">КУПИТЬ</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <?php
-                                //     $i++;
-                                // }
-                            ?>
+
+                            @endforeach
                         </div>
                     </div>
                     <div class="swiper-button-prev prev2"></div>
@@ -419,7 +425,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <div class="swiper-pagination pagination2"></div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <?php
         /*
         <div class="as row">
@@ -515,7 +521,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
 
     <script src="{{ asset("assets/js/jquery.min.js") }}"></script>
-    <script src="{{ asset("/assets/js/swiper.min.js") }}></script>
+    <script src="{{ asset("assets/js/swiper.min.js") }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="{{ asset("assets/js/parallax.min.js") }}"></script>
     <script src="{{ asset("assets/js/script.js") }}"></script>
