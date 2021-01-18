@@ -15,6 +15,6 @@ use App\Models\Slider;
 
 // dd($data);
 Route::get('/', function () {
-    $slids = Slider::all();
+    $slids = Slider::where('activeFrom', '<', date("Y-m-d H:i:s"))->where('activeTo', '>', date("Y-m-d H:i:s"))->get();
     return view('home',['slids'=>$slids]);
 });
