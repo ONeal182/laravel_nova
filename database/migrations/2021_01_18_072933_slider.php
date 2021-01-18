@@ -30,7 +30,7 @@ class Slider extends Migration
             $table->string('time');
             $table->text('link');
             $table->date('created_at');
-            $table->date('updated_at');
+            $table->date('updated_at')->nullable();
 
         });
     }
