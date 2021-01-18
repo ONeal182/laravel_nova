@@ -403,7 +403,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                             </div>
                                         </div>
                                         <div class="offer-back">
-                                            <b>Скидка {{$slid->sale}}%></b>
+                                            <b>Скидка {{$slid->sale}}%</b>
                                             <div class="desc">
                                             {!! $slid->desc !!}
 
