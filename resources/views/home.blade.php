@@ -383,7 +383,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 // foreach ($arCarousel as $item) {
                             ?>
                             @foreach ($slids as $slid)
-                                {{ $slid->name }}
+  
 
                             <div class="swiper-slide">
                                 <div class="offer">
