@@ -18,10 +18,10 @@ class Slider extends Migration
             $table->string('name');
             $table->date('activeFrom');
             $table->date('activeTo');
-            $table->string('img-static');
-            $table->string('img-static-alt');
-            $table->string('img-hover');
-            $table->string('img-hover-alt');
+            $table->string('img_static');
+            $table->string('img_static-alt');
+            $table->string('img_hover');
+            $table->string('img_hover-alt');
             $table->string('sale');
             $table->string('get');
             $table->string('discount');
@@ -29,6 +29,9 @@ class Slider extends Migration
             $table->string('coupone');
             $table->string('time');
             $table->text('link');
+            $table->date('created_at');
+            $table->date('updated_at');
+
         });
     }
 
