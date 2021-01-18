@@ -12,7 +12,7 @@
     <meta property="og:image" content="assets/img/1280x496_180522Eukanuba_New.jpg"/>
     <meta property="og:title" content="Eukanuba. Акция Моя собака - мой тренер"/>
     <meta property="og:description" content="Eukanuba. Активный образ жизни - залог здоровья."/>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="{{ asset("assets/css/style.css") }}">
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -514,11 +514,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
     </div>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/swiper.min.js"></script>
+    <script src="{{ asset("assets/js/jquery.min.js") }}"></script>
+    <script src="{{ asset("/assets/js/swiper.min.js") }}></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <script src="assets/js/parallax.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="{{ asset("assets/js/parallax.min.js") }}"></script>
+    <script src="{{ asset("assets/js/script.js") }}"></script>
 
 </body>
 </html>
