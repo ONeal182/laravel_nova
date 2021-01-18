@@ -1,132 +1,524 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <title>Eukanuba. Акция "Моя собака – мой тренер"</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#fff"/>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <meta name="description" content="Eukanuba. Активный образ жизни - залог здоровья."/>
+    <meta property="og:url" content="https://eukanuba.activadvantage.ru/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="assets/img/1280x496_180522Eukanuba_New.jpg"/>
+    <meta property="og:title" content="Eukanuba. Акция Моя собака - мой тренер"/>
+    <meta property="og:description" content="Eukanuba. Активный образ жизни - залог здоровья."/>
+    <link rel="stylesheet" href="assets/css/style.css">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PJ4GPTD');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJ4GPTD"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1672610149581378');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1672610149581378&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    <!-- Global site tag (gtag.js) - Google Ads: 777597712 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-777597712"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-        <title>Laravel</title>
+      gtag('config', 'AW-777597712');
+    </script>
+    <!-- Event snippet for Eukanuba Active Advantage PageView conversion page -->
+    <script>
+      gtag('event', 'conversion', {'send_to': 'AW-777597712/G6vOCM_EyN8BEJDm5PIC'});
+    </script>
+    <!-- Rating Mail.ru counter -->
+    <script type="text/javascript">
+    var _tmr = window._tmr || (window._tmr = []);
+    _tmr.push({id: "3191213", type: "pageView", start: (new Date()).getTime(), pid: "USER_ID"});
+    (function (d, w, id) {
+      if (d.getElementById(id)) return;
+      var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+      ts.src = "https://top-fwz1.mail.ru/js/code.js";
+      var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+      if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+    })(document, window, "topmailru-code");
+    </script><noscript><div>
+    <img src="https://top-fwz1.mail.ru/counter?id=3191213;js=na" style="border:0;position:absolute;left:-9999px;" alt="Top.Mail.Ru" />
+    </div></noscript>
+    <!-- //Rating Mail.ru counter -->
+    <script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?168",t.onload=function(){VK.Retargeting.Init("VK-RTRG-527739-aV4Pv"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-527739-aV4Pv" style="position:fixed; left:-999px;" alt=""/></noscript>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+       ym(67531990, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+       });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/67531990" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 
-        <!-- Styles -->
-        <style>
-            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-t{border-top-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}}
-        </style>
-
-        <style>
-            body {
-                font-family: 'Nunito';
-            }
-        </style>
-    </head>
-    <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
-                        @endif
-                    @endauth
+    <div class="wrap">
+        <div class="navbar">
+            <div class="navbar-row">
+                <div class="navbar-logo">
+                    <a href="javascript:;"><img src="assets/img/logo.svg" alt=""></a>
                 </div>
-            @endif
-
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                    <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
-                        <g clip-path="url(#clip0)" fill="#EF3B2D">
-                            <path d="M248.032 44.676h-16.466v100.23h47.394v-14.748h-30.928V44.676zM337.091 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.431 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162-.001 2.863-.479 5.584-1.432 8.161zM463.954 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.432 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162 0 2.863-.479 5.584-1.432 8.161zM650.772 44.676h-15.606v100.23h15.606V44.676zM365.013 144.906h15.607V93.538h26.776V78.182h-42.383v66.724zM542.133 78.182l-19.616 51.096-19.616-51.096h-15.808l25.617 66.724h19.614l25.617-66.724h-15.808zM591.98 76.466c-19.112 0-34.239 15.706-34.239 35.079 0 21.416 14.641 35.079 36.239 35.079 12.088 0 19.806-4.622 29.234-14.688l-10.544-8.158c-.006.008-7.958 10.449-19.832 10.449-13.802 0-19.612-11.127-19.612-16.884h51.777c2.72-22.043-11.772-40.877-33.023-40.877zm-18.713 29.28c.12-1.284 1.917-16.884 18.589-16.884 16.671 0 18.697 15.598 18.813 16.884h-37.402zM184.068 43.892c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002-35.648-20.524a2.971 2.971 0 00-2.964 0l-35.647 20.522-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v38.979l-29.706 17.103V24.493a3 3 0 00-.103-.776c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002L40.098 1.396a2.971 2.971 0 00-2.964 0L1.487 21.919l-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v122.09c0 1.063.568 2.044 1.489 2.575l71.293 41.045c.156.089.324.143.49.202.078.028.15.074.23.095a2.98 2.98 0 001.524 0c.069-.018.132-.059.2-.083.176-.061.354-.119.519-.214l71.293-41.045a2.971 2.971 0 001.489-2.575v-38.979l34.158-19.666a2.971 2.971 0 001.489-2.575V44.666a3.075 3.075 0 00-.106-.774zM74.255 143.167l-29.648-16.779 31.136-17.926.001-.001 34.164-19.669 29.674 17.084-21.772 12.428-43.555 24.863zm68.329-76.259v33.841l-12.475-7.182-17.231-9.92V49.806l12.475 7.182 17.231 9.92zm2.97-39.335l29.693 17.095-29.693 17.095-29.693-17.095 29.693-17.095zM54.06 114.089l-12.475 7.182V46.733l17.231-9.92 12.475-7.182v74.537l-17.231 9.921zM38.614 7.398l29.693 17.095-29.693 17.095L8.921 24.493 38.614 7.398zM5.938 29.632l12.475 7.182 17.231 9.92v79.676l.001.005-.001.006c0 .114.032.221.045.333.017.146.021.294.059.434l.002.007c.032.117.094.222.14.334.051.124.088.255.156.371a.036.036 0 00.004.009c.061.105.149.191.222.288.081.105.149.22.244.314l.008.01c.084.083.19.142.284.215.106.083.202.178.32.247l.013.005.011.008 34.139 19.321v34.175L5.939 144.867V29.632h-.001zm136.646 115.235l-65.352 37.625V148.31l48.399-27.628 16.953-9.677v33.862zm35.646-61.22l-29.706 17.102V66.908l17.231-9.92 12.475-7.182v33.841z"/>
-                        </g>
-                    </svg>
-                </div>
-
-                <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                    <div class="grid grid-cols-1 md:grid-cols-2">
-                        <div class="p-6">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel.com/docs" class="underline text-gray-900 dark:text-white">Documentation</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laracasts.com" class="underline text-gray-900 dark:text-white">Laracasts</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel-news.com/" class="underline text-gray-900 dark:text-white">Laravel News</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">Vibrant Ecosystem</div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline">Forge</a>, <a href="https://vapor.laravel.com" class="underline">Vapor</a>, <a href="https://nova.laravel.com" class="underline">Nova</a>, and <a href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline">Telescope</a>, and more.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
-                    <div class="text-center text-sm text-gray-500 sm:text-left">
-                        <div class="flex items-center">
-                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="-mt-px w-5 h-5 text-gray-400">
-                                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                            </svg>
-
-                            <a href="https://laravel.bigcartel.com" class="ml-1 underline">
-                                Shop
-                            </a>
-
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="ml-4 -mt-px w-5 h-5 text-gray-400">
-                                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                            </svg>
-
-                            <a href="https://github.com/sponsors/taylorotwell" class="ml-1 underline">
-                                Sponsor
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
-                    </div>
+                <div class="navbar-open"><span></span></div>
+                <div class="navbar-menu">
+                    <div class="navbar-close"></div>
+                    <ul class="nav">
+                        <li class="nav-item"><a href="https://www.eukanuba.ru/why-eukanuba/">ПОЧЕМУ EUKANUBA?</a></li>
+                        <li class="nav-item">
+                            <a href="https://www.eukanuba.ru/product/">Рационы для собак</a><span></span>
+                            <ul class="nav-child">
+                                <li><a href="https://www.eukanuba.ru/product/?filter[1][]=1">ЩЕНКИ</a></li>
+                                <li><a href="https://www.eukanuba.ru/product/?filter[1][]=2">ВЗРОСЛЫЕ СОБАКИ</a></li>
+                                <li><a href="https://www.eukanuba.ru/product/?filter[1][]=3">СОБАКИ СТАРШЕ 6 ЛЕТ</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://www.eukanuba.ru/product_cat/">Рационы для кошек</a><span></span>
+                            <ul class="nav-child">
+                                <li><a href="https://www.eukanuba.ru/product_cat/?filter[11][]=17">КОТЯТА</a></li>
+                                <li><a href="https://www.eukanuba.ru/product_cat/?filter[11][]=27">ВЗРОСЛЫЕ КОШКИ</a></li>
+                                <li><a href="https://www.eukanuba.ru/product_cat/?filter[11][]=29">КОШКИ СТАРШЕ 7 ЛЕТ</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="https://www.eukanuba.ru/articles/">Советы</a></li>
+                        <li class="nav-item">
+                            <a href="https://www.eukanuba.ru/stores" onclick="gtag('event', 'buy_link_click', {'event_category' : 'buy_link', 'event_label' : 'header_shop_link'});" class="buy-now">КУПИТЬ</a>
+                            <ul class="nav-child">
+                                <li><a href="https://www.eukanuba.ru/stores?show=n" onclick="gtag('event', 'buy_link_click', {'event_category' : 'buy_link', 'event_label' : 'footer_offline_shop_link'});">МАГАЗИНЫ</a></li>
+                                <li><a href="https://www.eukanuba.ru/stores?show=y" onclick="gtag('event', 'buy_link_click', {'event_category' : 'buy_link', 'event_label' : 'footer_offline_shop_link'});">КУПИТЬ ОНЛАЙН</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </body>
+        <div class="header">
+            <div class="parallax" data-relative-input="true" id="scene">
+                <div class="background" data-depth="0.3">
+                    <img src="assets/img/eukanuba_new.jpg" alt="">
+                </div>
+            </div>
+            <div class="header-logo">
+                <div class="row">
+                    <span><img src="assets/img/eukanuba-activ-advantage.png" alt="" width="350px"></span>
+                </div>
+            </div>
+            <div class="header-discount">
+                <div class="row">
+                    <div class="header-discount-block">
+                        <b>Получите скидку</b>
+                        <span>На покупку рационов Eukanuba</span>
+                        <a href="javascript:;">Получить</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="header-title">
+                <div class="row">
+                    <b>#МОЯ СОБАКА</b>
+                    <span>МОЙ ТРЕНЕР</span>
+                </div>
+            </div> -->
+            <img src="assets/img/header-mobile.png" alt="" class="mobile">
+        </div>
+        <div class="health row">
+            <div class="health-title">АКТИВНЫЙ ОБРАЗ ЖИЗНИ&nbsp;&mdash;<br>ЗАЛОГ ЗДОРОВЬЯ</div>
+            <div class="health-caption">
+                <span>Это актуально как для людей, <br><b>так и&nbsp;для собак.</b></span>
+            </div>
+            <div class="health-content">
+                <div class="health-img">
+                    <img src="assets/img/health.jpg" alt="">
+                </div>
+                <div class="health-text">
+                    <p>Растущий и&nbsp;исследующий новый мир щенок. Взрослая собака, готовая к&nbsp;любым приключениям благодаря крепкому здоровью и&nbsp;отличной форме. Зрелая собака, полная жизненных сил каждый день.</p>
+                    <p>Более 50&nbsp;лет мы&nbsp;разрабатываем превосходное питание для здоровой, активной жизни, которой достойна каждая собака.</p>
+                </div>
+            </div>
+        </div>
+        <div class="health-line">
+            <div class="row">
+                <div class="health-logo">
+                    <img src="assets/img/health-logo.png" alt="">
+                </div>
+                <div class="health-path">
+                    <img src="assets/img/health-path.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="formula" data-parallax="scroll" data-image-src="assets/img/formula.png">
+            <div class="formula-content row">
+                <div class="formula-title">
+                    <b>Эксклюзивная формула</b>
+                    <span>на&nbsp;основе натурального животного белка и&nbsp;других нутриентов для поддержания ФИЗИЧЕСКОЙ ФОРМЫ, ИНТЕЛЛЕКТА и&nbsp;АКТИВНОСТИ</span>
+                </div>
+                <div class="formula-list">
+                    <div class="formula-item">
+                        <i><img src="assets/img/formula3.png" alt="" width="57px"></i>
+                        <b>ФИЗИЧЕСКАЯ ФОРМА</b>
+                        <span>Белки животного происхождения в&nbsp;сочетании с&nbsp;глюкозамином и&nbsp;хондроитинсульфатом помогают сохранить нормальную мышечную массу, а&nbsp;также подвижность суставов</span>
+                    </div>
+                    <div class="formula-item">
+                        <i><img src="assets/img/formula4.png" alt="" width="79px"></i>
+                        <b>ИНТЕЛЛЕКТ</b>
+                        <span>DHA (ДГК) и&nbsp;антиоксиданты для поддержания эффективной работы мозга</span>
+                    </div>
+                    <div class="formula-item">
+                        <i><img src="assets/img/formula5.png" alt="" width="131px"></i>
+                        <b>АКТИВНОСТЬ</b>
+                        <span>Оптимальный уровень жиров и&nbsp;углеводов способствует поддержанию повседневной физической активности Вашей собаки</span>
+                    </div>
+                </div>
+                <div class="formula-caption">
+                    <div class="formula-icon">
+                        <img src="assets/img/formula1.png" alt="">
+                        /
+                        <img src="assets/img/formula2.png" alt="">
+                    </div>
+                    Натуральный животный белок&nbsp;&ndash;&nbsp;<b>ингредиент #1</b>
+                </div>
+            </div>
+            <div class="formula-best row">
+                <ul>
+                    <li>
+                        <img src="assets/img/formula6.png" alt="">
+                        <b>ЧИСТЫЕ ЗУБЫ, ЗДОРОВЫЕ ДЕСНЫ</b>
+                        <span>Комплекс Eukanuba&trade; 3D&nbsp;DentaDefense*** способствует уменьшению образования зубного камня</span>
+                    </li>
+                    <li>
+                        <img src="assets/img/formula7.png" alt="">
+                        <b>КОМФОРТНОЕ ПИЩЕВАРЕНИЕ</b>
+                        <span>Натуральная клетчатка и&nbsp;комплекс пребиотиков для активных собак</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="carousel row">
+            <div class="carousel-content">
+                <div class="swiper-container carousel1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide3">
+                            <div class="carousel-title">
+                                <span>Для взрослых собак</span>
+                            </div>
+                            <div class="field">
+                                <div class="path">
+                                    <a href="https://eukanuba.ru/product?&filter[1][]=2&filter[3][]=10"><img src="files/carousel3-path.jpg" alt=""></a>
+                                </div>
+                                <div class="img">
+                                    <a href="https://eukanuba.ru/product?&filter[1][]=2&filter[3][]=10">
+                                        <picture>
+                                            <source media="(min-width: 768px)" srcset="files/carousel3.jpg">
+                                            <source media="(max-width: 767px)" srcset="files/carousel3-m.jpg">
+                                            <img src="files/carousel3.jpg" alt="">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="title">ПОДДЕРЖИВАЕТ НОРМАЛЬНУЮ<br>МЫШЕЧНУЮ МАССУ И&nbsp;РАБОТУ СУСТАВОВ</div>
+                            </div>
+                            <a href="https://eukanuba.ru/product" class="complete">ВЫБРАТЬ</a>
+                        </div>
+                        <div class="swiper-slide slide1">
+                            <div class="carousel-title">
+                                <span>Для щенков</span>
+                            </div>
+                            <div class="field">
+                                <div class="path">
+                                    <a href="https://eukanuba.ru/product?&filter[1][]=1&filter[3][]=10"><img src="files/carousel1-path.jpg" alt=""></a>
+                                </div>
+                                <div class="img">
+                                    <a href="https://eukanuba.ru/product?&filter[1][]=1&filter[3][]=10">
+                                        <picture>
+                                            <source media="(min-width: 768px)" srcset="files/carousel1.jpg">
+                                            <source media="(max-width: 767px)" srcset="files/carousel1-m.jpg">
+                                            <img src="files/carousel1.jpg" alt="">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="title">Оптимальное содержание DHA (ДГК)<br>ДЛЯ ПОВЫШЕНИЯ ОБУЧАЕМОСТИ ЩЕНКОВ</div>
+                            </div>
+                            <a href="https://eukanuba.ru/product" class="complete">ВЫБРАТЬ</a>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <div class="carousel-title">
+                                <span>Для пожилых собак</span>
+                            </div>
+                            <div class="field">
+                                <div class="path">
+                                    <a href="https://eukanuba.ru/product?&filter[1][]=3&filter[3][]=10"><img src="files/carousel2-path.jpg" alt=""></a>
+                                </div>
+                                <div class="img">
+                                    <a href="https://eukanuba.ru/product?&filter[1][]=3&filter[3][]=10">
+                                        <picture>
+                                            <source media="(min-width: 768px)" srcset="files/carousel2.jpg">
+                                            <source media="(max-width: 767px)" srcset="files/carousel2-m.jpg">
+                                            <img src="files/carousel2.jpg" alt="">
+                                        </picture>
+                                    </a>
+                                </div>
+                                <div class="title">УЛУЧШАЕТ РАБОТУ СУСТАВОВ за счет<br>увеличенного содержания ГЛЮКОЗАМИНА**</div>
+                            </div>
+                            <a href="https://eukanuba.ru/product" class="complete">ВЫБРАТЬ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev prev1"></div>
+                <div class="swiper-button-next next1"></div>
+                <div class="swiper-pagination pagination1"></div>
+            </div>
+        </div>
+        <!-- <div class="challenge" data-parallax="scroll" data-image-src="assets/img/challenge.png">
+            <div class="row">
+                <div class="challenge-head">
+                    <div class="challenge-title"><i></i>EukanubaRUN CHALLENGE</div>
+                    <div class="challenge-caption">
+                        <b>Теперь пробежки с&nbsp;любимым питомцем приносят пользу не&nbsp;только вам!</b>
+                        <i><img src="assets/img/challenge-logo.png" alt="" width="220px"></i>
+                    </div>
+                </div>
+                <div class="challenge-row">
+                    <div class="challenge-phone">
+                        <div class="challenge-img">
+                            <img src="assets/img/challenge-phone.png" alt="">
+                        </div>
+                        <ul class="challenge-text">
+                            <li>
+                                <b>ПРОБЕГИ ЛЮБОЕ <br>РАССТОЯНИЕ</b>
+                                <span>с&nbsp;питомцем или без него <br>с&nbsp;17.09 по&nbsp;04.10.2020г.</span>
+                            </li>
+                            <li>
+                                <b>ДЕЛИСЬ В&nbsp;СОЦИАЛЬНЫХ <br>СЕТЯХ РЕЗУЛЬТАТОМ</b>
+                                <span>из&nbsp;любого приложения для бега</span>
+                            </li>
+                            <li>
+                                <b>ОТМЕЧАЙ АККАУНТ <a href="https://www.instagram.com/eukanuba_russia/" target="_blank">@EUKANUBA_RUSSIA</a></b>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="challenge-content">
+                        <p>Мы&nbsp;суммируем твои результаты с&nbsp;результатами других участников&nbsp;и</p>
+                        <b>ПЕРЕДАДИМ 1кг&nbsp;КОРМА</b>
+                        <span>ЗА&nbsp;КАЖДЫЕ 10&nbsp;км<br>В&nbsp;ФОНД &laquo;ПОДАРОК СУДЬБЫ&raquo;</span><a href="https://www.instagram.com/vsemposobake/" target="_blank">@VSEMPOSOBAKE</a></b>
+                        <div class="challenge-path">
+                            <div class="path">
+                                <img src="assets/img/health-path.png" alt="">
+                            </div>
+                            <div class="angle">
+                                <img src="assets/img/angle.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <?php
+        // $carouselPath = __DIR__ . '/carousel.txt';
+        // if (file_exists($carouselPath)) {
+        //     $jsonString   = file_get_contents(__DIR__ . '/carousel.txt');
+        //     $carouselData = json_decode($jsonString, true);
+        //     $time = time();
+        //     $arCarousel = [];
+
+        //     foreach ($carouselData as $item) {
+        //         if ((!empty($item['activeFrom']) && $time < strtotime($item['activeFrom'])) ||
+        //                 (!empty($item['activeTo']) && $time > strtotime($item['activeTo'])) ||
+        //                 (!empty($item['disable']) && $item['disable'] == 'Y')) {
+        //                     continue;
+        //         }
+        //         $arCarousel[] = $item;
+        //     }
+        // }
+
+        // if (!empty($arCarousel)) {
+        ?>
+        <!-- <div class="discount" id="discount" data-parallax="scroll" data-image-src="assets/img/discount.jpg">
+            <div class="row">
+                <div class="discount-title">Получите скидку</div>
+                <div class="discount-anons">На следующую покупку рационов Eukanuba у партнеров</div>
+            </div>
+            <div class="carousel row">
+                <div class="carousel-content">
+                    <div class="swiper-container carousel2">
+                        <div class="swiper-wrapper">
+                            <?php
+                                // $i = 0;
+                                // foreach ($arCarousel as $item) {
+                            ?>
+                            <div class="swiper-slide">
+                                <div class="offer">
+                                    <div class="content">
+                                        <div class="offer-front">
+                                            <div class="offer-img">
+                                                <div class="show">
+                                                    <img src="<?//=$item['img-static']?>" alt="<?//=(empty($item['img-static-alt'])) ? '' : $item['img-static-alt']?>">
+                                                </div>
+                                                <div class="hide">
+                                                    <img src="<?//=$item['img-hover']?>" alt="<?//=(empty($item['img-hover-alt'])) ? '' : $item['img-hover-alt']?>" class="hover">
+                                                </div>
+                                            </div>
+                                            <div class="offer-discount"><?//=$item['sale']?></div>
+                                            <div class="offer-get">
+                                                <?//=$item['get']?>
+                                            </div>
+                                        </div>
+                                        <div class="offer-back">
+                                            <b><?//=$item['discount']?></b>
+                                            <div class="desc">
+                                                <?//=$item['desc']?>
+                                            </div>
+                                            <div class="coupone" id="coupone<?//=$i?>"><?//=$item['coupone']?></div>
+                                            <button onclick="copyToClipboard('#coupone<?//=$i?>')">скопировать</button>
+                                            <div class="text"><?//=$item['time']?></div>
+                                            <a href="<?//=(!empty($item['link']) ? $item['link'] : 'javascript:;')?>" class="more" target="_blank">КУПИТЬ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php
+                                //     $i++;
+                                // }
+                            ?>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev prev2"></div>
+                    <div class="swiper-button-next next2"></div>
+                    <div class="swiper-pagination pagination2"></div>
+                </div>
+            </div>
+        </div> -->
+        <?php
+        /*
+        <div class="as row">
+            <b>Полные условия акции</b>
+            <!-- <ul class="social">
+                <li class="social-item"><a href="https://www.instagram.com/eukanuba_russia/" class="in" target="_blank"></a></li>
+                <li class="social-item"><a href="https://www.facebook.com/EukanubaRussia" class="fb" target="_blank"></a></li>
+                <li class="social-item"><a href="http://vk.com/eukanubarussia" class="vk" target="_blank"></a></li>
+            </ul> -->
+        </div>
+        */
+        ?>
+        <?php
+        // }
+        ?>
+        <div class="row">
+            <div class="slide">
+                <div class="slide-list">
+                    <div class="slide-item">
+                        <a href="https://www.eukanuba.ru/articles/chetyre_prichiny_pochemu_vasha_sobaka_luchshij_personalnyj_trener" class="slide-field">
+                            <img src="files/img1.jpg" alt="" class="slide-field-img">
+                            <b>Как поддержать физическую активность собак в&nbsp;домашних условиях</b>
+                            <span class="more">Подробнее</span>
+                        </a>
+                    </div>
+                    <div class="slide-item">
+                        <a href="https://www.eukanuba.ru/articles/sovety_i_rekomendacii_ot_ekspertov_po_uhodu__vospitaniju_i_socializacii_shhenka" class="slide-field">
+                            <img src="files/img2.jpg" alt="" class="slide-field-img">
+                            <b>Советы и&nbsp;рекомендации по&nbsp;воспитанию и&nbsp;социализации щенков</b>
+                            <span>Подробнее</span>
+                        </a>
+                    </div>
+                    <div class="slide-item">
+                        <a href="https://www.eukanuba.ru/articles/chetyre_prichiny_pochemu_vasha_sobaka_luchshij_personalnyj_trener" class="slide-field">
+                            <img src="files/img3.jpg" alt="" class="slide-field-img">
+                            <b>Как поддержать физическую активность собак в&nbsp;домашних условиях</b>
+                            <span class="more">Подробнее</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="slide-rules">*ЭКТИВ ЭДВАНТЭДЖ.<br>** НА&nbsp;50% БОЛЬШЕ ГЛЮКОЗАМИНА по&nbsp;сравнению с&nbsp;рационом Eukanuba&trade; Adult Medium Breed<br>*** 3Д&nbsp;ДентаДефенс</div>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="foot-up">
+                <div class="foot-col">
+                    <div class="foot-name">Рационы</div>
+                    <ul class="foot-menu">
+                        <li><a target="_blank" href="https://eukanuba.ru/product/?filter[1][]=1">Щенки</a></li>
+                        <li><a target="_blank" href="https://eukanuba.ru/product/?filter[1][]=2">Взрослые собаки</a></li>
+                        <li><a target="_blank" href="https://eukanuba.ru/product/?filter[1][]=3">Собаки старше 6 лет</a></li>
+                        <li><a target="_blank" href="https://eukanuba.ru/product">Посмотреть всё</a></li>
+                    </ul>
+                </div>
+                <div class="foot-col">
+                    <div class="foot-name">ОБРАТНАЯ СВЯЗЬ</div>
+                    <ul class="foot-menu">
+                        <li><a href="#" class="feedback-product">Задать вопрос</a></li>
+                    </ul>
+                </div>
+                <div class="foot-col">
+                    <div class="foot-name">О НАС</div>
+                    <ul class="foot-menu">
+                        <li><a target="_blank" href="https://eukanuba.ru/why-eukanuba/">Почему Eukanuba&trade;</a></li>
+                        <li><a target="_blank" href="/user_agreement.pdf">Пользовательское соглашение</a></li>
+                        <li><a target="_blank" href="http://www.mars.com/cis/ru/site-owner.aspx">Владелец сайта</a></li>
+                        <li><a target="_blank" href="http://www.mars.com/global/policies/legal/ld-russian">Юридические условия</a></li>
+                        <li><a target="_blank" href="http://www.mars.com/global/policies/privacy/pp-russian">Конфиденциальность</a></li>
+                        <li><a target="_blank" href="http://www.mars.com/global/policies/cookie/cn-russian">Сookies</a></li>
+                    </ul>
+                </div>
+                <div class="foot-col">
+                    <div class="foot-name">КУПИТЬ</div>
+                    <ul class="foot-menu">
+                        <li><a href="https://www.eukanuba.ru/stores?show=n" onclick="gtag('event', 'buy_link_click', {'event_category' : 'buy_link', 'event_label' : 'footer_offline_shop_link'});">Магазины</a></li>
+                        <li><a href="https://www.eukanuba.ru/stores?show=y" onclick="gtag('event', 'buy_link_click', {'event_category' : 'buy_link', 'event_label' : 'footer_offline_shop_link'});">Купить онлайн</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="foot-down">
+                <div class="foot-copyright">&copy;2017&nbsp;Mars, Incorporated. Все права защищены.</div>
+                <div class="foot-tel">Телефон горячей линии: <a href="tel:+78002005530">8-800-200-55-30</a></div>
+                <div class="foot-social">
+                    Наши сообщества в&nbsp;соцсетях:
+                    <ul class="social">
+                        <li class="social-item"><a href="https://www.instagram.com/eukanuba_russia/" class="in" target="_blank"></a></li>
+                        <li class="social-item"><a href="https://www.facebook.com/EukanubaRussia" class="fb" target="_blank"></a></li>
+                        <li class="social-item"><a href="http://vk.com/eukanubarussia" class="vk" target="_blank"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="assets/js/parallax.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
 </html>
