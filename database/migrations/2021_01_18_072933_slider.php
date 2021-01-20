@@ -16,8 +16,8 @@ class Slider extends Migration
         Schema::create('sliders', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->date('activeFrom');
-            $table->date('activeTo');
+            $table->date('active_from');
+            $table->date('active_to');
             $table->string('img_static');
             $table->string('img_static-alt');
             $table->string('img_hover');
@@ -29,8 +29,7 @@ class Slider extends Migration
             $table->string('coupone');
             $table->string('time');
             $table->text('link');
-            $table->date('created_at');
-            $table->date('updated_at')->nullable();
+            $table->timestamps();
 
         });
     }

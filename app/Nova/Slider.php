@@ -49,8 +49,8 @@ class Slider extends Resource
         return [
             ID::make(__('ID'), 'id')->sortable(),
             Text::make(__('Название акции'),'name')->placeholder('Введите название акции'),
-            DateTime::make(__('Начало акции'),'activeFrom'),
-            DateTime::make(__('Конец акции'),'activeTo'),
+            DateTime::make(__('Начало акции'),'active_from'),
+            DateTime::make(__('Конец акции'),'active_to'),
             Image::make(__('Картинка слайдера'),'img_static')->disk('public')
             ->path('photos')
             ->prunable(),
