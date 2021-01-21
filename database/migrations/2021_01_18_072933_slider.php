@@ -16,15 +16,15 @@ class Slider extends Migration
         Schema::create('sliders', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->date('active_from');
-            $table->date('active_to');
-            $table->string('img_static');
+            $table->dateTime('active_from');
+            $table->dateTime('active_to');
+            $table->string('img_static')->nullable();
             $table->string('img_static_alt');
             $table->string('img_hover');
             $table->string('img_hover_alt');
-            $table->string('sale');
-            $table->string('get');
-            $table->string('discount');
+            $table->integer('sale');
+            $table->text('btn_name');
+            $table->string('discount')->nullable();
             $table->string('desc');
             $table->string('coupone');
             $table->string('time');
@@ -32,6 +32,28 @@ class Slider extends Migration
             $table->timestamps();
 
         });
+        // DB::table('sliders')->insert([
+        //     'name' => 'mirkorma.ru',
+        //     'active_from' => '2020-12-06 21:00:00',
+        //     'active_to' => '2021-12-12 08:59:59',
+        //     'img_static'=> '/storage/photos/VDKVxA9vBHwE0IzOniPXlc3fYNUZRa2QUDbSiygY.png',
+        //     'img_static_alt' => 'item-static-alt0',
+        //     'img_hover'=> '/storage/photos/HRIamuYsnzCeP6bPsz0PUpUO03aEPJGFAQGJIuCI.png',
+        //     'img_hover_alt'=> 'item-static-alt0',
+        //     'sale'=>25,
+        //     'btn_name'=>'Получить',
+        //     'discount'=> NULL,
+        //     'desc'=>'На покупку рационов Ekaunuba на сайте <a href="https://www.mirkorma.ru/brands/eukanuba" target="_blank">mirkorma.ru</a> по промокоду:',
+        //     'coupone'=>'RLD20',
+        //     'time'=>'Промокод действителен до 31.03.2021 только при попупке онлайн.',
+        //     'link'=>'https://www.mirkorma.ru/brands/eukanuba/',
+        //     'btn_name'=>'Получить'
+
+            
+
+        // ]);
+        
+
     }
 
     /**
@@ -41,6 +63,6 @@ class Slider extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('sliders');
     }
 }

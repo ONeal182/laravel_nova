@@ -9,7 +9,7 @@ class Slider extends Model
 {
     use HasFactory;
     protected $casts = [
-        'activeFrom' => 'datetime',
-        'activeTo' => 'datetime'
+        'active_from' => 'datetime',
+        'active_to' => 'datetime'
     ];
 }
