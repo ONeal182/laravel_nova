@@ -19,9 +19,9 @@ class Slider extends Migration
             $table->date('active_from');
             $table->date('active_to');
             $table->string('img_static');
-            $table->string('img_static-alt');
+            $table->string('img_static_alt');
             $table->string('img_hover');
-            $table->string('img_hover-alt');
+            $table->string('img_hover_alt');
             $table->string('sale');
             $table->string('get');
             $table->string('discount');
