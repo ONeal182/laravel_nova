@@ -22,9 +22,9 @@ class SliderSeeder extends Seeder
                         "name"=> "mirkorma.ru",
                         "active"=>"Y",
                         
-                        "img_static"=> "photos/mirkorma.png",
+                        "img_static"=> "photos/ShzUJ7JnPnW4ENTYXG0Ha81VTusAsP5HZQts8sSD.png",
                         
-                        "img_hover"=> "photos/mirkorma_hover.png",
+                        "img_hover"=> "photos/Fb5ku1roX3S8sJp53odnOUSCuSBgZDJ3J2tRfNLu.png",
                         
                         "sale"=> "25",
                         "btn_name"=> "Получить",
@@ -41,9 +41,9 @@ class SliderSeeder extends Seeder
                         "name"=> "petfood.ru",
                         "active"=>"Y",
                         
-                        "img_static"=> "photos/petfood.png",
+                        "img_static"=> "photos/Xt46eoPaPozgbVhZAJonrJsb9KvmxfU4dfE5UqhL.png",
                         
-                        "img_hover"=> "photos/petfood_hover.png",
+                        "img_hover"=> "photos/XNw4kmtLogviXh6zaa3gWCppIlx2spb9nY9zNXjn.png",
                         
                         "sale"=> "25",
                         "btn_name"=> "Получить",
@@ -60,9 +60,9 @@ class SliderSeeder extends Seeder
                         "name"=> "kupi-korm.ru",
                         "active"=>"Y",
                         
-                        "img_static"=> "photos/kupi-korm.png",
+                        "img_static"=> "photos/Kfro2NHQ7vFILs9vwAlMyChFmhbaxOwyh4SgyyKr.png",
                         
-                        "img_hover"=> "photos/kupi-korm_hover.png",
+                        "img_hover"=> "photos/02UtWAQ9tYoukVE6QPWGMStYUM0PrTSE49MnlUjs.png",
                         
                         "sale"=> "25",
                         "btn_name"=> "Получить",
@@ -79,9 +79,9 @@ class SliderSeeder extends Seeder
                         "name"=> "счастливый-питомец.рф",
                         "active"=>"Y",
                         
-                        "img_static"=> "photos/luckypet.png",
+                        "img_static"=> "photos/vKDrMW6jiZUPWmfb50eigTehHt0qr6hLgZe0lHXi.png",
                         
-                        "img_hover"=> "photos/luckypet_hover.png",
+                        "img_hover"=> "photos/Keohta5xZfwvPGbwkkbVVmnWqbTNNPVLHgakqrKu.png",
                         
                         "sale"=> "25",
                         "btn_name"=> "Получить",
@@ -98,9 +98,9 @@ class SliderSeeder extends Seeder
                         "name"=> "zooopt.ru",
                         "active"=>"Y",
                         
-                        "img_static"=> "photos/ZooOptru.png",
+                        "img_static"=> "photos/q8aMyFvYctuew7G8oAkHH6SmRZW5AUKdwNjwKFho.png",
                         
-                        "img_hover"=> "photos/ZooOptru_hover.png",
+                        "img_hover"=> "photos/I0xTlVq8N5qFKNRyW2wLkbeN3w1S3LNVfwlYsDMZ.png",
                         
                         "sale"=> "25",
                         "btn_name"=> "Получить",
@@ -116,9 +116,9 @@ class SliderSeeder extends Seeder
                         "name"=> "Филя",
                         "active"=>"Y",
                         
-                        "img_static"=> "photos/filya.png",
+                        "img_static"=> "photos/U1VwUvQYiLAMv99dh3g52gcllAUu0adA0qGVZzoR.png",
                         
-                        "img_hover"=> "photos/filya_hover.png",
+                        "img_hover"=> "photos/2PSNQx4kmcVNGzA1gL2FWq3fFZtoRLrP4VC9Gc3F.png",
                         
                         "sale"=> "25",
                         "btn_name"=> "Получить",
@@ -135,9 +135,9 @@ class SliderSeeder extends Seeder
                         "name"=> "zooregion.ru",
                         "active"=>"Y",
                         
-                        "img_static"=> "photos/zooregion.png",
+                        "img_static"=> "photos/NHWvsvoOvhwd9b3nShxlwKu3bhfRxFM9drdGAGl7.png",
                         
-                        "img_hover"=> "photos/zooregion_hover.png",
+                        "img_hover"=> "photos/sv1Dcsi3pMH1aV3iq9JczMruawtIxGL2rsQxCjbp.png",
                         
                         "sale"=> "25",
                         "btn_name"=> "Получить",
@@ -154,9 +154,9 @@ class SliderSeeder extends Seeder
                         "name"=> "красный кролик",
                         "active"=>"Y",
                         
-                        "img_static"=> "photos/krkrolik.png",
+                        "img_static"=> "photos/tYHsHzB6oBttmDtpScdEsuZhU2QlGCVKgb4n2Cb0.png",
                         
-                        "img_hover"=> "photos/krkrolik_hover.png",
+                        "img_hover"=> "photos/on57A8Rk8TaYGNpHFcsYDJpOD6FkUhxfcUYYlVFH.png",
                         
                         "sale"=> "25",
                         "btn_name"=> "Получить",
@@ -173,9 +173,9 @@ class SliderSeeder extends Seeder
                         "name"=> "Купитькорм.рф",
                         "active"=>"Y",
                         
-                        "img_static"=> "photos/kupitkorm.png",
+                        "img_static"=> "photos/2KO3zSXqlZFMiLpGA8rnCipoSRgEnX2DLyPxJQS4.png",
                         
-                        "img_hover"=> "photos/kupitkorm_hover.png",
+                        "img_hover"=> "photos/hMgPdp99rw77Kfo8QzKkFS32LuF2MZX0zzWLP9rN.png",
                         
                         "sale"=> "25",
                         "btn_name"=> "Получить",
@@ -191,9 +191,9 @@ class SliderSeeder extends Seeder
                         "name"=> "Главное хвост",
                         "active"=>"Y",
                         
-                        "img_static"=> "photos/glavnoehvost.png",
+                        "img_static"=> "photos/sKwecwaKqbA9O0ZdNIz8EOCGUucnPZppseSpIgBP.png",
                         
-                        "img_hover"=> "photos/glavnoehvost_hover.png",
+                        "img_hover"=> "photos/AZbaSILRfbRYuhs2zmpnsLxdyUK7LSP4cDgEg02M.png",
                         
                         "sale"=> "25",
                         "btn_name"=> "Получить",
