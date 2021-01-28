@@ -28,7 +28,7 @@ class SliderSeeder extends Seeder
                         
                         "sale"=> "25",
                         "btn_name"=> "Получить",
-                        "btn_name2"=> "Получить",
+                        "btn_name2"=> "Купить",
                         "discount"=> "Скидка 25%",
                         //"desc"=> "На покупку рационов Ekaunuba на сайте <a href='https://www.mirkorma.ru/brands/eukanuba' tarbtn_name='_blank'>mirkorma.ru</a> по промокоду:",
                         "coupone"=> "RLD20",
@@ -47,6 +47,7 @@ class SliderSeeder extends Seeder
                         
                         "sale"=> "25",
                         "btn_name"=> "Получить",
+                        "btn_name2"=> "Купить",
                         "discount"=> "Скидка 25%",
                         //"desc"=> "На покупку рационов Ekaunuba на сайте <a href='https://petfood.ru/collection/eukanuba' tarbtn_name='_blank'>petfood.ru</a> по промокоду:",
                         "coupone"=> "25EKB",
@@ -65,6 +66,7 @@ class SliderSeeder extends Seeder
                         
                         "sale"=> "25",
                         "btn_name"=> "Получить",
+                        "btn_name2"=> "Купить",
                         "discount"=> "Скидка 25%",
                         //"desc"=> "На покупку рационов Ekaunuba на сайте <a href='https://kupi-korm.ru/categories/sukhie-korma?brand=437&indepth=True' tarbtn_name='_blank'>kupi-korm.ru</a> по промокоду:",
                         "coupone"=> "EUKDOG25",
@@ -83,6 +85,7 @@ class SliderSeeder extends Seeder
                         
                         "sale"=> "25",
                         "btn_name"=> "Получить",
+                        "btn_name2"=> "Купить",
                         "discount"=> "Скидка 25%",
                         //"desc"=> "На покупку рационов Ekaunuba на сайте <a href='https://xn----7sbgnmcfnotjrboh1ec2f.xn--p1ai/%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B8/eukanuba/' tarbtn_name='_blank'>счастливый-питомец.рф</a> по промокоду:",
                         "coupone"=> "EUKDOG25",
@@ -101,6 +104,7 @@ class SliderSeeder extends Seeder
                         
                         "sale"=> "25",
                         "btn_name"=> "Получить",
+                        "btn_name2"=> "Купить",
                         "discount"=> "Скидка 25%",
                         //"desc"=> "На покупку рационов Ekaunuba в магазинах и на сайте <a href='https://zoopt.ru/catalog/tovary_dlya_sobak/korm_dlya_sobak/filter/proizvoditel-is-eukanuba/apply/' tarbtn_name='_blank'>zoopt.ru</a> по промокоду:",
                         "coupone"=> "EUKANUBA25",
@@ -118,6 +122,7 @@ class SliderSeeder extends Seeder
                         
                         "sale"=> "25",
                         "btn_name"=> "Получить",
+                        "btn_name2"=> "Купить",
                         "discount"=> "Скидка 25%",
                         //"desc"=> "На покупку рационов Ekaunuba на сайте <a href='https://www.zootovar-spb.ru/catalog/sobaki.htm?_f[filter][]=78' tarbtn_name='_blank'>zootovar-spb.ru</a> по промокоду:",
                         "coupone"=> "promo25",
@@ -136,6 +141,7 @@ class SliderSeeder extends Seeder
                         
                         "sale"=> "25",
                         "btn_name"=> "Получить",
+                        "btn_name2"=> "Купить",
                         "discount"=> "Скидка 25%",
                         //"desc"=> "На покупку рационов Ekaunuba на сайте <a href='https://zooregion.ru/catalog/sobaki/korm-dlya-sobak/?vendor=3256&ms|asale=1' tarbtn_name='_blank'>zooregion.ru</a> по промокоду:",
                         "coupone"=> "EUKANUBA2020",
@@ -154,6 +160,7 @@ class SliderSeeder extends Seeder
                         
                         "sale"=> "25",
                         "btn_name"=> "Получить",
+                        "btn_name2"=> "Купить",
                         "discount"=> "Скидка 25%",
                         //"desc"=> "На покупку рационов Ekaunuba на сайте <a href='https://krkrolik.ru/brands/eukanuba/' tarbtn_name='_blank'>krkrolik.ru</a> по промокоду:",
                         "coupone"=> "экануба25",
@@ -172,6 +179,7 @@ class SliderSeeder extends Seeder
                         
                         "sale"=> "25",
                         "btn_name"=> "Получить",
+                        "btn_name2"=> "Купить",
                         "discount"=> "Скидка 25%",
                         //"desc"=> "На покупку рационов Ekaunuba на сайте <a href='https://www.xn--h1adbijdkng7g.xn--p1ai/Eukanuba/' tarbtn_name='_blank'>Купитькорм.рф</a> по промокоду:",
                         "coupone"=> "KUPIEUKRF",
@@ -189,6 +197,7 @@ class SliderSeeder extends Seeder
                         
                         "sale"=> "25",
                         "btn_name"=> "Получить",
+                        "btn_name2"=> "Купить",
                         "discount"=> "Скидка 25%",
                         //"desc"=> "На покупку рационов Ekaunuba на сайте <a href='https://glavnoehvost.ru/katalog/brendy/eukanuba' tarbtn_name='_blank'>glavnoehvost.ru</a> по промокоду:",
                         "coupone"=> "euk25",

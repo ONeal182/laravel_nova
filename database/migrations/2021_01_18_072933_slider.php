@@ -15,17 +15,18 @@ class Slider extends Migration
     {
         Schema::create('sliders', function (Blueprint $table) {
             $table->id();
+            $table->string('active');
             $table->string('name');
             $table->text('link');
             $table->string('img_static')->nullable();
             $table->string('img_hover');
             $table->integer('sale');
             $table->text('btn_name');
+            $table->string('btn_name2');
             $table->string('discount')->nullable();
-            $table->string('desc');
+            // $table->string('desc');
             $table->string('coupone');
             $table->string('time');
-            $table->string('btn_name2');
             $table->timestamps();
             // $table->dateTime('active_from');
             // $table->dateTime('active_to');
