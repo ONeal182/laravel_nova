@@ -11,6 +11,7 @@ use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use Jackabox\DuplicateField\DuplicateField;
 
 class Slider extends Resource
 {
@@ -61,11 +62,11 @@ class Slider extends Resource
             Image::make(__('Картинка слайдера'),'img_static')->disk('public')
             ->path('photos')
             ->prunable(),
-            // Text::make(__('Описание картинки слайдера'),'img_static_alt')->placeholder('Введите описание картинки слайдера'),
+           
             Image::make(__('Hover картинки слайдера'),'img_hover')->disk('public')
             ->path('photos')
             ->prunable(),
-            // Text::make(__('Описание hover слайдера'),'img_hover_alt')->placeholder('Введите описание hover слайдера'),
+
             Number::make(__('Скидка'),'sale'),
             Text::make(__('Купон'),'coupone')->placeholder('Введите номер купона'),
             Text::make(__('Кнопка'),'btn_name')->placeholder('Введите название кнопки')->hideFromIndex(),
