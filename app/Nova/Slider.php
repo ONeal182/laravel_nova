@@ -78,7 +78,8 @@ class Slider extends Resource
             ->withMeta([
                 'resource' => 'sliders', // resource url
                 'model' => 'App\Models\Slider', // model path
-                'id' => $this->id // id of record
+                'id' => $this->id, // id of record
+                'Relations' => [ 'img_static' , 'img_hover' ],
                 
             ])
             
