@@ -16,20 +16,26 @@ class Slider extends Migration
         Schema::create('sliders', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->dateTime('active_from');
-            $table->dateTime('active_to');
+            $table->text('link');
             $table->string('img_static')->nullable();
-            $table->string('img_static_alt');
             $table->string('img_hover');
-            $table->string('img_hover_alt');
             $table->integer('sale');
             $table->text('btn_name');
             $table->string('discount')->nullable();
             $table->string('desc');
             $table->string('coupone');
             $table->string('time');
-            $table->text('link');
+            $table->string('btn_name2');
             $table->timestamps();
+            // $table->dateTime('active_from');
+            // $table->dateTime('active_to');
+            
+            // $table->string('img_static_alt');
+            
+            // $table->string('img_hover_alt');
+            
+            
+            
 
         });
 

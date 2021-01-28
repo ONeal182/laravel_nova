@@ -387,10 +387,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                         <div class="offer-front">
                                             <div class="offer-img">
                                                 <div class="show">
-                                                    <img src="/storage/{{$slid->img_static}}" alt="{{$slid->img_static_alt}}">
+                                                    <img src="/storage/{{$slid->img_static}}" alt="{{$slid->name}}">
                                                 </div>
                                                 <div class="hide">
-                                                    <img src="/storage/{{$slid->img_hover}}" alt="img_hover_alt" class="hover">
+                                                    <img src="/storage/{{$slid->img_hover}}" alt="{{$slid->name}}" class="hover">
                                                 </div>
                                             </div>
                                             <div class="offer-discount">{{$slid->sale}}%</div>
@@ -401,13 +401,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                         <div class="offer-back">
                                             <b>Скидка {{$slid->sale}}%</b>
                                             <div class="desc">
-                                            {!! $slid->desc !!}
+                                  
+                                            На покупку рационов Ekaunuba на сайте <a href='{{$slid->link}}' tarbtn_name='_blank'>{{$slid->name}}</a> по промокоду:
 
                                             </div>
                                             <div class="coupone" id="coupone{{$slid->id}}">{{$slid->coupone}}</div>
                                             <button onclick="copyToClipboard('#coupone{{$slid->id}}')">скопировать</button>
                                             <div class="text">{{$slid->time}}</div>
-                                            <a href="{{$slid->link}}" class="more" target="_blank">КУПИТЬ</a>
+                                            <a href="{{$slid->link}}" class="more" target="_blank">{{$slid->btn_name2}}</a>
                                         </div>
                                     </div>
                                 </div>

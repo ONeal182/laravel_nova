@@ -9,6 +9,7 @@ use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\Number;
 use Laravel\Nova\Fields\Image;
+use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Slider extends Resource
@@ -47,24 +48,31 @@ class Slider extends Resource
     public function fields(Request $request)
     {
         return [
-            ID::make(__('ID'), 'id')->sortable(),
-            Text::make(__('Название акции'),'name')->placeholder('Введите название акции'),
-            DateTime::make(__('Начало акции'),'active_from'),
-            DateTime::make(__('Конец акции'),'active_to'),
+            ID::make(__('ID'), 'id')->sortable()->hideFromIndex(),
+            Boolean::make(__('Активная'),'active')->trueValue('Y')->falseValue('N'),
+            Text::make(__('Название'),'name')->placeholder('Введите название сайта'),
+            Text::make(__('Ссылка'),'link',function(){
+                $username = $this->link;
+
+                return mb_strimwidth("{$username}", 0, 50, "...");
+            })->placeholder('Введите ссылка на акцию')->asHtml(),
+            // DateTime::make(__('Начало акции'),'active_from'),
+            // DateTime::make(__('Конец акции'),'active_to'),
             Image::make(__('Картинка слайдера'),'img_static')->disk('public')
             ->path('photos')
             ->prunable(),
-            Text::make(__('Описание картинки слайдера'),'img_static_alt')->placeholder('Введите описание картинки слайдера'),
+            // Text::make(__('Описание картинки слайдера'),'img_static_alt')->placeholder('Введите описание картинки слайдера'),
             Image::make(__('Hover картинки слайдера'),'img_hover')->disk('public')
             ->path('photos')
             ->prunable(),
-            Text::make(__('Описание hover слайдера'),'img_hover_alt')->placeholder('Введите описание hover слайдера'),
-            Number::make(__('Скидка акции'),'sale'),
-            Text::make(__('Номер купона'),'coupone')->placeholder('Введите номер купона'),
-            Text::make(__('Название кнопки'),'btn_name')->placeholder('Введите название кнопки'),
-            Textarea::make(__('Описание акции'),'desc')->placeholder('Введите описание акции'),
-            Text::make(__('Текст срока действия промокода'),'time')->placeholder('Введите текст срока действия промокода'),
-            Text::make(__('Ссылка на акцию'),'link')->placeholder('Введите ссылка на акцию'),
+            // Text::make(__('Описание hover слайдера'),'img_hover_alt')->placeholder('Введите описание hover слайдера'),
+            Number::make(__('Скидка'),'sale'),
+            Text::make(__('Купон'),'coupone')->placeholder('Введите номер купона'),
+            Text::make(__('Кнопка'),'btn_name')->placeholder('Введите название кнопки')->hideFromIndex(),
+            Text::make(__('Кнопка hover'),'btn_name2')->placeholder('Введите название кнопки hover')->hideFromIndex(),
+            // Textarea::make(__('Описание акции'),'desc')->placeholder('Введите описание акции'),
+            Text::make(__('Текст срока действия промокода'),'time')->placeholder('Введите текст срока действия промокода')->hideFromIndex(),
+            
             
         ];
     }
