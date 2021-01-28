@@ -48,6 +48,7 @@ class Slider extends Resource
 
     public function fields(Request $request)
     {
+    
         return [
             ID::make(__('ID'), 'id')->sortable()->hideFromIndex(),
             Boolean::make(__('Активная'),'active')->trueValue('Y')->falseValue('N'),
@@ -73,7 +74,13 @@ class Slider extends Resource
             Text::make(__('Кнопка hover'),'btn_name2')->placeholder('Введите название кнопки hover')->hideFromIndex(),
             // Textarea::make(__('Описание акции'),'desc')->placeholder('Введите описание акции'),
             Text::make(__('Текст срока действия промокода'),'time')->placeholder('Введите текст срока действия промокода')->hideFromIndex(),
-            
+            DuplicateField::make('Duplicate')
+            ->withMeta([
+                'resource' => 'sliders', // resource url
+                'model' => 'App\Models\Slider', // model path
+                'id' => $this->id // id of record
+                
+            ])
             
         ];
     }
